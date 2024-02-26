@@ -1,10 +1,10 @@
-.cap-container{
+.cap-container {
     position: relative;
     padding-top: 80px;
     display: flex;
 }
 
-.cap{
+.cap {
     position: relative;
     display: flex;
     align-items: end;
@@ -16,17 +16,20 @@
     width: 90px;
     height: 100px;
 }
-.cap img{
+
+.cap img {
     transition: 0.5s;
     z-index: 2;
     width: 100%;
     height: 100%;
 }
-#game{
+
+#game {
     position: relative;
     margin: 20px;
 }
-#ball{
+
+#ball {
     background-color: blue;
     border-radius: 50%;
     width: 50px;
@@ -35,40 +38,51 @@
     bottom: 0;
 
 }
-form{
+
+form {
     padding: 10px;
 }
-form div{
+
+form div {
     position: relative;
     margin: 10px;
     margin-left: 0;
     width: 250px;
 }
-form input{
+
+form input {
     width: 100px;
     position: absolute;
-    right: 0;    
+    right: 0;
 }
-.resultTable{
+
+.resultTable {
     position: relative;
 }
-.resultTable p{
+
+.resultTable p {
     transition: opacity 0.2s;
     position: absolute;
     opacity: 0;
 }
-#correct{
+
+#correct {
     color: green;
 }
-#incorrect{
+
+#incorrect {
     color: red;
 }
-#submit
-{
+
+#submit {
     position: relative;
 }
 
-.Table input{
+#reload {
+    position: relative;
+}
+
+.Table input {
     width: 100px;
     height: 20px;
 }

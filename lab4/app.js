@@ -1,54 +1,60 @@
-function CreateNumber(numberArr) {
-    if (numberArr.length != 10)
-        return "wrong number";
-    return String('(' + numberArr[0] + numberArr[1] + numberArr[2] + ") " + numberArr[3] + numberArr[4] + numberArr[5] + '-' + numberArr[6] + numberArr[7] + numberArr[8] + numberArr[9]);
-}
-var phone;
-phone = CreateNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
-console.log(phone);
-var Challenge = /** @class */ (function () {
-    function Challenge() {
+class shoesCase {
+    constructor(id, size, color, discount, cost) {
+        this.id = id;
+        this.size = size;
+        this.color = color;
+        this.discount = discount;
+        this.cost = cost;
     }
-    Challenge.solution = function (number) {
-        if (number < 0)
-            return 0;
-        else {
-            var sum = 0;
-            for (var i = 1; i < number; i++) {
-                if (i % 3 == 0 || i % 5 == 0)
-                    sum += i;
+    get cost() {
+        return this._cost * (1 - this.discount / 100);
+    }
+    set cost(newPrice) {
+        this._cost = newPrice;
+    }
+}
+let allProduct = {
+    Shoes: {
+        Boots: [
+            new shoesCase(1, 22, "green", 10, 42),
+            new shoesCase(2, 34, "red", 1, 80),
+            new shoesCase(3, 34, "blue", 20, 100),
+        ],
+        Sneakers: [
+            new shoesCase(4, 45, "green", 10, 42),
+            new shoesCase(5, 30, "black", 50, 1000),
+        ],
+        Sandals: [
+            new shoesCase(6, 20, "red", 10, 62),
+            new shoesCase(7, 32, "green", 20, 82),
+            new shoesCase(8, 42, "white", 10, 42),
+        ],
+    },
+};
+class ShoesCollection {
+    constructor(allProduct) {
+        this.allProduct = allProduct;
+    }
+    *[Symbol.iterator]() {
+        let categories = Object.keys(this.allProduct.Shoes);
+        for (let category of categories) {
+            let items = this.allProduct.Shoes[category];
+            for (let item of items) {
+                yield item;
             }
-            return sum;
         }
-    };
-    return Challenge;
-}());
-console.log(Challenge.solution(10));
-function swapArr(arr, k) {
-    if (k == 0)
-        return arr;
-    if (arr.length == 0)
-        return null;
-    var newArr = [];
-    for (var i = 0; i < k; i++)
-        newArr[i] = arr[arr.length - (k - i)];
-    for (var i = 0; i < arr.length - k; i++)
-        newArr[k + i] = arr[i];
-    return newArr;
+    }
 }
-var arr = [1, 2, 3, 4, 5];
-console.log(arr);
-console.log(swapArr(arr, 3));
-function GetMedian(arrnum1, arrnum2) {
-    if (arrnum1.length == 0 && arrnum2.length == 0)
-        return null;
-    var arr = arrnum1.concat(arrnum2).sort();
-    //arr.sort();
-    //console.log(arr);
-    if (arr.length % 2 == 0)
-        return (arr[(arr.length / 2) - 1] + arr[arr.length / 2]) / 2;
-    else
-        return arr[Math.floor(arr.length / 2)];
+const shoesCollection = new ShoesCollection(allProduct);
+for (let product of shoesCollection) {
+    console.log(product);
 }
-console.log(GetMedian([1, 3], [2]));
-console.log(GetMedian([1, 2], [3, 4]));
+function filter(shoes, minPrice, maxPrice, size, color) {
+    let filteredIds = [];
+    for (let product of shoes) {
+        if (product.cost >= minPrice && product.cost <= maxPrice && product.size === size && product.color === color)
+            filteredIds.push(product.id);
+    }
+    return filteredIds;
+}
+console.log(filter(shoesCollection, 10, 80, 20, 'red'));

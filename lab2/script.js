@@ -17,47 +17,57 @@ function changeBall() {
 function changeCap() {
     let heightCap = document.getElementById('heightN').value;
     let widthCap = document.getElementById('widthN').value;
-    for( i = 0; i < 3; i ++){
+    for (i = 0; i < 3; i++) {
         caps[i].style.width = widthCap + 'px';
         caps[i].style.height = heightCap + 'px';
     }
-   
+
 }
 
 caps.forEach(cap => {
-    cap.addEventListener('click', function(event) {
+    cap.addEventListener('click', function (event) {
         caps[positionBall].appendChild(ball);
-       this.querySelector('img').style.transform = `translatey(${parseInt(ball.offsetWidth)*(-1) -10 + 'px'})`;
-       if(this == caps[positionBall]){
+        this.querySelector('img').style.transform = `translatey(${parseInt(ball.offsetWidth) * (-1) - 10 + 'px'})`;
+        if (this == caps[positionBall]) {
             correct.style.opacity = 1;
-            score ++;
-        }
-        else{
-            score --;
+            score++;
+        } else {
+            score--;
             incorrect.style.opacity = 1;
         }
         resultField.value = score;
-       setTimeout(reset, 1200);
+        setTimeout(reset, 1200);
     });
 });
 
-function save(){
+function save() {
     changeBall();
     changeCap();
     changePos();
     return false;
 }
 
-function reset(){
+function reset() {
     correct.style.opacity = 0;
     incorrect.style.opacity = 0;
+    document.getElementById('heightN').value = 100;
+    document.getElementById('widthN').value = 90;
+    document.getElementById('diameter').value = 50
+    changeCap();
+    changeBall();
     changePos();
 }
 
-function changePos(){
-    for(i = 0; i < 3; i ++)
+function changePos() {
+    for (i = 0; i < 3; i++)
         caps[i].querySelector('img').style.transform = '';
     positionBall = Math.floor(Math.random() * 3);
 }
+
+document.getElementById('reload').addEventListener("click", () => {
+    score = 0;
+    resultField.value = score;
+    reset();
+})
 
 changePos();
