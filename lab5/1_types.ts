@@ -8,40 +8,42 @@ const num: number = 3e10
 const message: string = 'Hello Typescript'
 
 const numberArray: number[] = [1, 1, 2, 3, 5, 8, 13]
-const numberArray2: Array<number> = [1, 1, 2, 3, 5, 8, 13]
+const numberArray2: Array<number> = [1, 1, 2, 3, 5, 8, 13] //класс Array
 
 const words: string[] = ['Hello', 'Typescript']
 
 // Tuple
 const contact: [string, number] = ['Vladilen', 1234567]
 
-// Any
+
 let variable: any = 42
-// ...
-variable = 'New String'
+variable = 'New String' //без any ошибка
 variable = []
 
-// ====
 function sayMyName(name: string): void {
-  console.log(name)
+    console.log(name)
 }
-sayMyName('Хайзенберг')
+
+sayMyName('Кирилл')
 
 // Never
+//используется когда ошибка или функция бесконечно выполняется
 function throwError(message: string): never {
-  throw new Error(message)
+    throw new Error(message)
 }
 
 function infinite(): never {
-  while (true) {
+    while (true) {
 
-  }
+    }
 }
 
 // Type
+// создание именованных типов
 type Login = string
 
 const login: Login = 'admin'
+//ошибка
 // const login2: Login = 2
 
 type ID = string | number

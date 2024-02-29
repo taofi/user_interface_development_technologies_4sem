@@ -7,7 +7,7 @@ class shoesCase {
         this.cost = cost;
     }
     get cost() {
-        return this._cost * (1 - this.discount / 100);
+        return parseFloat((this._cost * (1 - this.discount / 100)).toFixed(2));
     }
     set cost(newPrice) {
         this._cost = newPrice;
@@ -30,31 +30,30 @@ let allProduct = {
             new shoesCase(8, 42, "white", 10, 42),
         ],
     },
-};
-class ShoesCollection {
-    constructor(allProduct) {
-        this.allProduct = allProduct;
-    }
-    *[Symbol.iterator]() {
-        let categories = Object.keys(this.allProduct.Shoes);
-        for (let category of categories) {
-            let items = this.allProduct.Shoes[category];
-            for (let item of items) {
-                yield item;
+    [Symbol.iterator]() {
+        let categories = Object.values(this.Shoes).flat();
+        let current = 0;
+        return {
+            next() {
+                if (current < categories.length) {
+                    return { done: false, value: categories[current++] };
+                }
+                else {
+                    return { done: true, value: null };
+                }
             }
-        }
+        };
     }
+};
+for (let product of allProduct) {
+    console.log(`id ${product.id}, size ${product.size}, color ${product.color}, discount ${product.discount}, cost ${product.cost}`);
 }
-const shoesCollection = new ShoesCollection(allProduct);
-for (let product of shoesCollection) {
-    console.log(product);
-}
-function filter(shoes, minPrice, maxPrice, size, color) {
+function filter(minPrice, maxPrice, size, color) {
     let filteredIds = [];
-    for (let product of shoes) {
+    for (let product of allProduct) {
         if (product.cost >= minPrice && product.cost <= maxPrice && product.size === size && product.color === color)
             filteredIds.push(product.id);
     }
     return filteredIds;
 }
-console.log(filter(shoesCollection, 10, 80, 20, 'red'));
+console.log(filter(10, 40, 22, 'green'));
