@@ -22,25 +22,23 @@ var Typescript = /** @class */ (function () {
     };
     return Typescript;
 }());
-// class Car {
-//   readonly model: string
-//   readonly numberOfWheels: number = 4
-//
-//   constructor(theModel: string) {
-//     this.model = theModel
-//   }
-// }
 var Car = /** @class */ (function () {
-    function Car(model) {
-        this.model = model;
+    function Car(theModel) {
         this.numberOfWheels = 4;
+        this.model = theModel;
     }
     return Car;
 }());
-// ==============
+var Car2 = /** @class */ (function () {
+    function Car2(model) {
+        this.model = model;
+        this.numberOfWheels = 4;
+    }
+    return Car2;
+}());
 var Animal = /** @class */ (function () {
     function Animal() {
-        this.voice = '';
+        this.voice = ''; //наследуется
         this.color = 'black';
         this.go();
     }
@@ -62,8 +60,8 @@ var Cat = /** @class */ (function (_super) {
 var cat = new Cat();
 cat.setVoice('test');
 console.log(cat.color);
+//ошибка
 // cat.voice
-// =====================
 var Component = /** @class */ (function () {
     function Component() {
     }
