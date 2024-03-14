@@ -68,19 +68,76 @@ type GroupType = {
 
 class Group implements GroupType {
     students: Array<StudentType> = [];
-    mark: MarkFilterType;
-    group: GroupFilterType;
+
+    constructor(public mark: MarkFilterType, public group: GroupFilterType) {
+    }
 
     studentsFilter(group: GroupFilterType): Array<StudentType> {
-        return this.students.filter(student => student.group === group);
+        return this.students.filter(student => student.group == group);
     }
 
     marksFilter(mark: MarkFilterType): Array<StudentType> {
-        return this.students.filter(student => student.marks.some(m => m.mark === mark));
+        return this.students.filter(student => student.marks.some(m => m.mark == mark));
     }
 
     deleteStudent(id: number): void {
-        this.students = this.students.filter(student => student.id !== id);
+        this.students = this.students.filter(student => student.id != id);
     }
 }
 
+let group: Group = new Group(5, 3);
+group.students.push({
+    id: 1,
+    name: "Иван Иванов",
+    group: 3,
+    marks: [
+        {
+            subject: "Математика",
+            mark: 5,
+            done: true,
+        },
+    ],
+});
+group.students.push({
+    id: 2,
+    name: "Олег Иванов",
+    group: 3,
+    marks: [
+        {
+            subject: "Математика",
+            mark: 2,
+            done: true,
+        },
+        {
+            subject: "Русский яз.",
+            mark: 6,
+            done: true,
+        },
+    ],
+});
+
+group.students.push({
+    id: 3,
+    name: "Иван Олегоыич",
+    group: 2,
+    marks: [
+        {
+            subject: "Математика",
+            mark: 10,
+            done: true,
+        },
+        {
+            subject: "Физика",
+            mark: 6,
+            done: true,
+        },
+    ],
+});
+
+console.log('mark filter:')
+console.log(group.marksFilter(6));
+console.log('Student filter:')
+console.log(group.studentsFilter(3));
+console.log('Delete:')
+group.deleteStudent(3);
+console.log(group.students);
