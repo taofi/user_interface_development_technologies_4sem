@@ -16,6 +16,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+p{
+  color: white;
+}
 .Counter{
   margin: 20px;
   display: inline-block;

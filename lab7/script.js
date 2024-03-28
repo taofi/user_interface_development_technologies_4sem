@@ -49,7 +49,6 @@ promise.then(result => {
 });
 
 async function processNumber() {
-
     let promise =  Promise.resolve(21);
     let result = await promise;
     console.log(result);
@@ -58,5 +57,5 @@ async function processNumber() {
 }
 
 setTimeout(() => {
-    processNumber();
+    processNumber().then(()=>console.log("last promise end"));
 }, 2000)
