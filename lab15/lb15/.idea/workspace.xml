@@ -5,13 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b57171ae-1e4c-44c7-b1df-c8a556a38f72" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/lab15.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Action/actionsTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Action/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Number.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Container/ClueButton.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Container/GenerateButton.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Container/NumbersPanel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Container/SudokuContainer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Reducer/field.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Reducer/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Reducer/number.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lab14/lb14" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab14/lb14" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lb9.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lb9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lb15.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Button.tsx" beforeDir="false" />
@@ -105,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714912503002</updated>
-      <workItem from="1714912504044" duration="4454000" />
+      <workItem from="1714912504044" duration="4599000" />
     </task>
     <servers />
   </component>
