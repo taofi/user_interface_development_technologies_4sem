@@ -5,9 +5,10 @@ import {connect} from "react-redux";
 import Sudoku from "../Components/Sudoku";
 import {Field} from "../Reducer/field";
 
-const mapStateToProps = (state : State) : {field:Field, n:number} => ({
+const mapStateToProps = (state : State) : {field:Field, n:number, isCorrect:boolean} => ({
     field: state.field,
     n: state.number.n,
+    isCorrect: state.field.isCorrect,
 });
 
 const mapDispatchToProps = (dispatch : Dispatch<Action>) => ({

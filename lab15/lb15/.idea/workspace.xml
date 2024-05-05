@@ -5,43 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b57171ae-1e4c-44c7-b1df-c8a556a38f72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/lab15.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Action/actionsTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Action/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Number.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Container/ClueButton.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Container/GenerateButton.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Container/NumbersPanel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Container/SudokuContainer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reducer/field.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reducer/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reducer/number.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lab14/lb14" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab14/lb14" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lb9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lb15.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NumbersPanel.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Sudoku.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Сell.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scipts/Checker.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scipts/Generator.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scipts/Solver.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ЛР15 Судоку+Redux(4ч).docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Sudoku.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Sudoku.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Container/SudokuContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/SudokuContainer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reducer/field.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reducer/field.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,30 +27,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2g33bDdVtR9iQUi4YllB8nG5LX1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.npm start.executor": "Run",
-    "ts.external.directory.path": "D:\\4_sem\\TRPI\\lab15\\lb15\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.npm start.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\4_sem\\TRPI\\lab15\\lb15\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\4_sem\TRPI\lab15\lb15" />
@@ -119,6 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714912503002</updated>
       <workItem from="1714912504044" duration="4599000" />
+      <workItem from="1714917858674" duration="2060000" />
     </task>
     <servers />
   </component>
