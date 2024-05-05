@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="811b64c8-913a-45d8-a0bc-abbd19ac42bd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../lab14/lb14" beforeDir="false" afterPath="$PROJECT_DIR$/../lab14/lb14" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/.idea/lb9.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/Components/Button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/Components/NumbersPanel.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/Components/Sudoku.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/Components/Сell.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/Scipts/Checker.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/Scipts/Generator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/Scipts/Solver.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lb15/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ЛР15 Судоку+Redux(4ч).docx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2g33Wu6VpOqYzxkQuUiqZ82eyRh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="811b64c8-913a-45d8-a0bc-abbd19ac42bd" name="Changes" comment="" />
+      <created>1714912469509</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714912469509</updated>
+      <workItem from="1714912470432" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
