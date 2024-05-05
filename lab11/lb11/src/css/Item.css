@@ -1,0 +1,17 @@
+.Item{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #15dcdc;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.Item h2{
+
+}
+
+.Item p{
+
+}

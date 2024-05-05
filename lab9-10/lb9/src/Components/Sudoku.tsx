@@ -5,7 +5,6 @@ import generatePuzzle from "../Scipts/Generator";
 import solveSudoku from "../Scipts/Solver";
 import { adjustMatrix, Copy } from "../Scipts/Checker";
 import {Simulate} from "react-dom/test-utils";
-import error = Simulate.error;
 
 let saveField:number[][] =new Array(9).fill(0).map(() => new Array(9).fill(0));
 
@@ -67,12 +66,17 @@ function Sudoku(props:{chosenNumber:number}):JSX.Element{
         console.log(Copy(saveField));
         setFieldCellState(state);
     }
-    const fieldChange = (i:number, j:number) => ():void => {
+    const fieldChange = (i:number, j:number) => (n?:number):void => {
         const newField:number[][] = Copy(field);
+        let number;
+        if(n === undefined)
+            number = props.chosenNumber
+        else
+            number = n;
         if(props.chosenNumber === newField[i][j])
             newField[i][j] = 0;
         else
-            newField[i][j] = props.chosenNumber;
+            newField[i][j] = number;
         if(props.chosenNumber !== saveField[i][j])
             setErrors(errorCounter + 1);
         setFieldCellState(fieldCheck(newField));

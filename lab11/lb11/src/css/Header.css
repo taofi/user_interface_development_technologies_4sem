@@ -1,0 +1,29 @@
+header{
+    background-color: #7c7cde;
+    width: 100%;
+    position: fixed;
+    height: 45px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container{
+    position: relative;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: 200px 20px;
+    grid-gap: 5px;
+}
+
+.Container input{
+    width: 100%;
+}
+
+.Container img{
+    width: 100%;
+}
